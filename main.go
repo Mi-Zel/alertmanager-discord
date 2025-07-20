@@ -257,7 +257,7 @@ func buildDiscordMessage(alertManagerData *AlertManagerData, status string, numb
 		URL:    alertManagerData.ExternalURL,
 		Color:  color,
 		Description: "Prometheus alert summary",
-		Fields: DiscordEmbedFields{},
+		//Fields: DiscordEmbedFields{},
 	}
 	discordMessage.Embeds = DiscordEmbeds{messageHeader}
 	return discordMessage
